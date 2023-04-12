@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+
+html{
+    background-color: hsl(226, 43%, 10%);
+    font-family: 'Rubik';
+    color: hsl(236, 100%, 87%);
+}
+
+body{
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+
+.cardsBox{
+    display: grid;
+    grid-template-columns: repeat(3, 300px);
+    gap: 20px;
+}
+
+.box{
+    display: flex;
+    justify-content: center;
+}
+
+.account, .cards{
+    border-radius: 20px;
+}
+
+.account{
+    background-color:hsl(235, 46%, 20%);
+    width: 20%;
+    margin-right: 20px;
+}
+
+.account .profil{
+    background-color:hsl(235, 45%, 61%);
+    border-radius: 20px;
+    height: 60%;
+    padding: 20px;
+}
+
+.account .options{
+    padding: 20px;
+}
+
+.account .options p{
+    color:hsl(236, 100%, 87%); ;
+}
+
+.account .options p:hover{
+    color:white;
+}
+
+.account .options p::click{
+    color:white;
+}
+
+.account img{
+    border: 3px solid white;
+    width: 100px;
+    border-radius: 50%;
+}
+
+.account h2{
+    color: white;
+    font-size: 40px;
+}
+.account span{
+    color: white;
+}
+
+.cards{
+    height: 300px;
+    display: grid;
+    grid-template-rows: 20% 80%;
+}
+
+.cards  h3, h2{
+    color: white;
+}
+
+
+.cards p, h3{
+    margin: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.cards h2{
+    font-size: 40px;
+    margin: 30px;
+}
+
+.cards .info{
+    background-color:hsl(235, 46%, 20%);
+    border-radius: 20px;
+}
+
+.elipsis:hover{
+    color: white;
+}
+
+.cards .info:hover{
+    background-color: hsl(235, 45%, 61%);
+}
+
+.cards img{
+    justify-self: flex-end;
+}
+
+
+.work{
+    background-color: hsl(15, 100%, 70%);
+}
+
+.play{
+    background-color: hsl(195, 74%, 62%);
+}
+
+.study{
+    background-color: hsl(348, 100%, 68%);
+}
+
+.exercise{
+    background-color: hsl(145, 58%, 55%);
+}
+
+.social{
+    background-color: hsl(264, 64%, 52%);
+}
+
+.selfcare{
+    background-color: hsl(43, 84%, 65%);
+}
+
+@media only screen and (max-width: 1340px) {
+    .box {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .cardsBox{
+        display: flex;
+        flex-direction: column;
+    }
+}
